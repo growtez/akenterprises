@@ -4,234 +4,468 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Deep Cleaning Services | AKEnterprises Goa</title>
-    
-    <meta name="description" content="Professional deep cleaning for homes and offices in Goa. Eco-friendly products, trained staff. Book your service today!">
-    <meta name="keywords" content="deep cleaning verna, home cleaning south goa, residential cleaning, commercial cleaning, akenterprises">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="home-cleaning.css">
 </head>
-<body>
-    <header class="navbar" id="navbar">
-        <div class="container navbar-container">
-            <a href="index.html" class="logo">
-                <div class="logo-icon-wrapper">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                </div>
-                <div class="logo-text">
-                    <span class="logo-title">AKEnterprises</span>
-                    <span class="logo-subtitle">Goa</span>
-                </div>
-            </a>
-            
-            <nav class="nav-links">
-                <a href="home-cleaning.html" class="nav-link active">Home Cleaning</a>
-                <a href="car-polishing.html" class="nav-link">Car Polishing</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="tel:+917387257618" class="btn btn-primary nav-btn-desktop">
-                    <i class="fa-solid fa-phone"></i> Call Now
-                </a>
-            </nav>
 
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
-                <i class="fa-solid fa-bars"></i>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-sparkles"></i>
+                AKEnterprises
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="tel:+917387257618" class="btn btn-primary">Schedule a Call</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
             </button>
         </div>
-    </header>
+    </nav>
 
-    <div class="mobile-menu" id="mobile-menu">
-        <a href="home-cleaning.html" class="mobile-link">Home Cleaning</a>
-        <a href="car-polishing.html" class="mobile-link">Car Polishing</a>
-        <a href="#about" class="mobile-link">About</a>
-        <a href="#contact" class="mobile-link">Contact</a>
-        <a href="tel:+917387257618" class="btn btn-primary mobile-btn">
-            <i class="fa-solid fa-phone"></i> Call Now
-        </a>
-    </div>
-
-    <main>
-        <section id="home" class="hero hero-home">
-            <div class="container hero-content">
-                <div class="hero-badge">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    <span>Professional Deep Cleaning</span>
-                </div>
-                <h1 class="hero-title">
-                    Deep Cleaning Services
-                    <br>
-                    <span class="hero-highlight">Goa</span>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>
+                    Enjoy The Best <br>
+                    Cleaning <span class="highlight">Service</span> <br>
+                    And Stay Safe
                 </h1>
-                <p class="hero-subtitle">
-                    Professional cleaning for your home and office. Eco-friendly products, trained staff, same-day service available.
-                </p>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Clients</span>
+                <p>A professional cleaning service ensures your space is spotless and safe. Hygiene by using specialized equipment and eco-friendly products. Save time and enhance well-being.</p>
+                <div class="hero-badges">
+                    <div class="badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Eco-Friendly</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">5★</span>
-                        <span class="stat-label">Rating</span>
+                    <div class="badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Safe & Secure</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Years</span>
-                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="tel:+917387257618" class="btn btn-primary">Booking Now</a>
+                    <a href="#services" class="btn btn-outline" style="background: transparent; border: 2px solid var(--accent-yellow); color: var(--accent-yellow);">See How it Works</a>
                 </div>
             </div>
-        </section>
-
-        <section id="services" class="services-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Our Home Cleaning Services</h2>
-                    <p class="section-subtitle">Professional cleaning services tailored to your needs</p>
+            <div class="hero-image">
+                <div class="hero-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600" alt="Professional Cleaning Team">
                 </div>
-
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon" style="--icon-color: #3b82f6;"><i class="fa-solid fa-house-chimney"></i></div>
-                        <h3 class="service-title">Residential Cleaning</h3>
-                        <p class="service-description">Complete home cleaning - kitchen, bathrooms, bedrooms, floors.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon" style="--icon-color: #a855f7;"><i class="fa-solid fa-building"></i></div>
-                        <h3 class="service-title">Commercial Cleaning</h3>
-                        <p class="service-description">Office and commercial space cleaning services.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon" style="--icon-color: #f97316;"><i class="fa-solid fa-couch"></i></div>
-                        <h3 class="service-title">Upholstery & Furniture</h3>
-                        <p class="service-description">Sofa, mattress, curtain, and carpet cleaning.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon" style="--icon-color: #10b981;"><i class="fa-solid fa-fan"></i></div>
-                        <h3 class="service-title">AC & Appliances</h3>
-                        <p class="service-description">AC, chimney, refrigerator, and appliance cleaning.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon" style="--icon-color: #06b6d4;"><i class="fa-solid fa-shield-virus"></i></div>
-                        <h3 class="service-title">Bathroom Sanitization</h3>
-                        <p class="service-description">Deep cleaning and sanitization with anti-bacterial treatment.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon" style="--icon-color: #6366f1;"><i class="fa-solid fa-box-open"></i></div>
-                        <h3 class="service-title">Move-In/Move-Out</h3>
-                        <p class="service-description">Complete property cleaning for moving.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">What Our Home Clients Say</h2>
-                    <p class="section-subtitle">Serving Goa for over 10 years with trusted, professional service.</p>
-                </div>
-
-                <div class="swiper testimonial-slider-home">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><div class="testimonial-card"><div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p class="testimonial-quote">"AKEnterprises did an amazing job with our 3BHK. The team was professional, and our home has never looked better. Highly recommend!"</p><div class="testimonial-author"><span class="author-name">- R. Sharma</span><span class="author-location">Goa</span></div></div></div>
-                        <div class="swiper-slide"><div class="testimonial-card"><div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p class="testimonial-quote">"We use their commercial cleaning service for our office in Verna Industrial Estate. Always punctual, thorough, and reliable."</p><div class="testimonial-author"><span class="author-name">- S. Naik</span><span class="author-location">Manager, Tech Solutions</span></div></div></div>
-                        <div class="swiper-slide"><div class="testimonial-card"><div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p class="testimonial-quote">"The move-out cleaning service was a lifesaver. They handled everything, and we got our full deposit back. Thank you!"</p><div class="testimonial-author"><span class="author-name">- P. Fernandes</span><span class="author-location">South Goa</span></div></div></div>
-                        <div class="swiper-slide"><div class="testimonial-card"><div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p class="testimonial-quote">"My sofa and carpets look brand new. I didn't realize how dirty they were until after AKEnterprises worked their magic."</p><div class="testimonial-author"><span class="author-name">- A. D'souza</span><span class="author-location">Margao</span></div></div></div>
-                    </div>
-                    <div class="swiper-pagination pagination-home"></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Contact Us for Home Cleaning</h2>
-                    <p class="section-subtitle">Get in touch to schedule your deep cleaning service today.</p>
-                </div>
-                <div class="contact-grid">
-                    <a href="tel:+917387257618" class="contact-card"><i class="fa-solid fa-phone contact-icon"></i><span class="contact-label">Phone</span><span class="contact-value">+91 73872 57618</span></a>
-                    <a href="mailto:info@akenterprises.com" class="contact-card"><i class="fa-solid fa-envelope contact-icon"></i><span class="contact-label">Email</span><span class="contact-value">info@akenterprises.com</span></a>
-                    <div class="contact-card"><i class="fa-solid fa-map-marker-alt contact-icon"></i><span class="contact-label">Location</span><span class="contact-value">Goa</span></div>
-                    <div class="contact-card"><i class="fa-solid fa-clock contact-icon"></i><span class="contact-label">Hours</span><span class="contact-value">7 AM - 9 PM</span></div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <div class="logo">
-                    <div class="logo-icon-wrapper">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    </div>
-                    <div class="logo-text">
-                    <span class="logo-title">AKEnterprises</span>
-                        <span class="logo-subtitle">Goa</span>
-                    </div>
-                </div>
-                <p class="footer-bio">
-                    Your trusted partner for premium home and auto services in Goa.
-                </p>
-                <div class="footer-socials">
-                    <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3 class="footer-col-title">Services</h3>
-                <ul class="footer-links">
-                    <li><a href="home-cleaning.html">Home Cleaning</a></li>
-                    <li><a href="car-polishing.html">Car Polishing</a></li>
-                    <li><a href="home-cleaning.html#services">Upholstery Cleaning</a></li>
-                    <li><a href="car-polishing.html#auto-services">Ceramic Coating</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3 class="footer-col-title">Company</h3>
-                <ul class="footer-links">
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="index.html">Our Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3 class="footer-col-title">Contact Info</h3>
-                <ul class="footer-contact-info">
-                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+917387257618">+91 73872 57618</a></li>
-                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@akenterprises.com">info@akenterprises.com</a></li>
-                    <li><i class="fa-solid fa-map-marker-alt"></i> <span>Goa</span></li>
-                </ul>
+                <div class="hero-circle"></div>
             </div>
         </div>
-        <div class="footer-copyright">
-            <p>© <span id="current-year"></span> AKEnterprises. All rights reserved.</p>
+    </section>
+
+    <!-- Trusted Section -->
+    <section class="trusted-section">
+        <div class="container">
+            <h3>Trusted Users</h3>
+            <div class="trusted-logos">
+                <span style="font-size: 1.5rem; font-weight: 600; color: var(--text-dark);">500+ Happy Clients</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=600" alt="Professional Cleaner">
+                <div class="about-badge">
+                    <div class="number">10+</div>
+                    <div class="text">Years Experience</div>
+                </div>
+            </div>
+            <div class="about-content">
+                <h3>About Us</h3>
+                <h2>Clean <span class="italic">Commitment</span></h2>
+                <p>A professional cleaning service ensures your space is spotless and safe. Hygiene by using specialized equipment and eco-friendly products. The Regular cleaning services enhance your living space's ambiance and comfort.</p>
+                <p>Whether it's a one-time deep clean or regular maintenance, professional cleaning saves time and promotes well-being.</p>
+                <a href="tel:+917387257618" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h3>Our Services</h3>
+                <h2>Flawless <span class="italic">Clean</span></h2>
+                <p style="color: var(--text-light); max-width: 600px; margin: 1rem auto 0;">A professional cleaning service ensures your space is spotless and safe. Hygiene by using specialized equipment and</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>House Cleaning</h3>
+                    <p>A professional cleaning service focuses on residential spaces.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Kitchen Cleaning</h3>
+                    <p>A professional cleaning service ensures pristine condition.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-th"></i>
+                    </div>
+                    <h3>Floor Cleaning</h3>
+                    <p>A professional cleaning service ensures floors.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bath"></i>
+                    </div>
+                    <h3>Bathroom Cleaning</h3>
+                    <p>A professional cleaning service ensures the spaces.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Office Cleaning</h3>
+                    <p>A professional cleaning service focuses.</p>
+                </div>
+                <div class="service-card" style="background: var(--primary-green); color: var(--white);">
+                    <div style="text-align: center; padding: 1rem 0;">
+                        <div style="font-size: 3rem; font-weight: 800; color: var(--accent-yellow); margin-bottom: 0.5rem;">12+</div>
+                        <div style="font-size: 1.1rem; margin-bottom: 1rem;">Exclusive Services For You</div>
+                        <a href="tel:+917387257618" class="btn btn-primary">See More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Section -->
+    <section class="quality-section">
+        <div class="container">
+            <div class="section-header">
+                <h3>Why Choose Us</h3>
+                <h2>Unmatched <span class="italic">Quality</span></h2>
+                <p style="color: var(--text-light); max-width: 600px; margin: 1rem auto 0;">A professional cleaning service ensures your space is spotless and safe. Hygiene by using specialized equipment and</p>
+            </div>
+            <div class="quality-grid">
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Expert Care</h3>
+                    <p>We service ensures to the vehicles excellent by.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Reliable Service</h3>
+                    <p>We service ensures to the vehicles excellent by.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Eco-Friendly</h3>
+                    <p>We service ensures to the vehicles excellent by.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Tailored Solutions</h3>
+                    <p>We service ensures to the vehiclesexcellent by.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h3>Our Pricing</h3>
+                <h2>Affordable <span class="italic">Packages</span></h2>
+                <p style="color: var(--text-light); max-width: 600px; margin: 1rem auto 0;">Choose the perfect cleaning package that fits your needs and budget</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <span class="pricing-badge">Basic</span>
+                    <div class="pricing-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <div class="price">₹999<span>/visit</span></div>
+                    <div class="price-label">Perfect for small spaces</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> Living Room Cleaning</li>
+                        <li><i class="fas fa-check-circle"></i> Bedroom Cleaning</li>
+                        <li><i class="fas fa-check-circle"></i> Basic Dusting</li>
+                        <li><i class="fas fa-check-circle"></i> Floor Mopping</li>
+                    </ul>
+                    <a href="tel:+917387257618" class="btn btn-outline">Choose Plan</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <span class="pricing-badge">Popular</span>
+                    <div class="pricing-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="price">₹1,999<span>/visit</span></div>
+                    <div class="price-label">Most popular choice</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> Complete House Cleaning</li>
+                        <li><i class="fas fa-check-circle"></i> Kitchen Deep Clean</li>
+                        <li><i class="fas fa-check-circle"></i> Bathroom Sanitization</li>
+                        <li><i class="fas fa-check-circle"></i> Balcony Cleaning</li>
+                        <li><i class="fas fa-check-circle"></i> Window Cleaning</li>
+                    </ul>
+                    <a href="tel:+917387257618" class="btn btn-outline">Choose Plan</a>
+                </div>
+
+                <div class="pricing-card">
+                    <span class="pricing-badge">Premium</span>
+                    <div class="pricing-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="price">₹2,999<span>/visit</span></div>
+                    <div class="price-label">Complete deep cleaning</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> All Standard Features</li>
+                        <li><i class="fas fa-check-circle"></i> Sofa Shampooing</li>
+                        <li><i class="fas fa-check-circle"></i> Carpet Cleaning</li>
+                        <li><i class="fas fa-check-circle"></i> Appliance Cleaning</li>
+                        <li><i class="fas fa-check-circle"></i> Pest Control</li>
+                    </ul>
+                    <a href="tel:+917387257618" class="btn btn-outline">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h3>Testimonials</h3>
+                <h2>What Our <span class="italic">Clients Say</span></h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150" alt="Client" class="testimonial-image">
+                    <div class="testimonial-content">
+                        <h4>Priya Sharma</h4>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"AKEnterprises provided exceptional service! My home has never looked this clean. The team was professional, punctual, and thorough. Highly recommended!"</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150" alt="Client" class="testimonial-image">
+                    <div class="testimonial-content">
+                        <h4>Rahul Desai</h4>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Outstanding work! They cleaned our office space and did an amazing job. Very professional team and eco-friendly products. Will definitely use their services again."</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150" alt="Client" class="testimonial-image">
+                    <div class="testimonial-content">
+                        <h4>Anita Patel</h4>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Best cleaning service in Goa! They transformed my apartment. The attention to detail is remarkable. Great value for money and friendly staff."</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" alt="Client" class="testimonial-image">
+                    <div class="testimonial-content">
+                        <h4>Vikram Singh</h4>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Reliable and efficient! They've been cleaning my home for months now and I couldn't be happier. The team is trustworthy and always does a fantastic job."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>
+                    Ready For a <span class="italic">Sparkling</span><br>
+                    Clean Home?
+                </h2>
+                <div class="cta-buttons">
+                    <div class="discount-badge">
+                        <i class="fas fa-tag" style="color: var(--primary-green);"></i>
+                        <span>20% Off First Booking</span>
+                    </div>
+                    <a href="tel:+917387257618" class="btn btn-primary" style="background: var(--primary-green); color: var(--white);">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3><i class="fas fa-sparkles"></i> AKEnterprises</h3>
+                    <p style="color: rgba(255,255,255,0.7); margin-top: 1rem;">Professional cleaning services in Goa. Making your spaces spotless and safe with eco-friendly solutions.</p>
+                    <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+                        <a href="#" style="color: var(--accent-yellow); font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: var(--accent-yellow); font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: var(--accent-yellow); font-size: 1.5rem;"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">House Cleaning</a></li>
+                        <li><a href="#">Kitchen Cleaning</a></li>
+                        <li><a href="#">Office Cleaning</a></li>
+                        <li><a href="#">Deep Cleaning</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +91 7387257618</li>
+                        <li><i class="fas fa-envelope"></i> info@akenterprises.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Goa, India</li>
+                    </ul>
+                    <div class="footer-subscribe">
+                        <input type="email" placeholder="Your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 AKEnterprises Goa. All rights reserved. | Designed with <i class="fas fa-heart" style="color: var(--accent-yellow);"></i></p>
+            </div>
         </div>
     </footer>
 
-    <div class="floating-buttons">
-        <a href="https://wa.me/+917387257618?text=Hi!%20I%20would%20like%20to%20book%20a%20home%20cleaning%20service." 
-            target="_blank" 
-            class="float-btn whatsapp-btn" 
-            aria-label="Message on WhatsApp">
-            <i class="fa-brands fa-whatsapp"></i>
-            <span class="float-tooltip">Message on WhatsApp</span>
+    <!-- Floating Buttons -->
+    <div class="floating-btns">
+        <a href="https://wa.me/917387257618" target="_blank" class="float-btn whatsapp-btn" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="tel:+917387257618" 
-            class="float-btn call-btn" 
-            aria-label="Call Now">
-            <i class="fa-solid fa-phone"></i>
-            <span class="float-tooltip">Call Now</span>
+        <a href="tel:+917387257618" class="float-btn call-btn" title="Call Now">
+            <i class="fas fa-phone-alt"></i>
         </a>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./index.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.right = '0';
+                navLinks.style.background = 'var(--primary-green)';
+                navLinks.style.padding = '1rem';
+                navLinks.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+            }
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    if (window.innerWidth <= 968) {
+                        navLinks.style.display = 'none';
+                    }
+                }
+            });
+        });
+
+        // Scroll Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Animate service cards, pricing cards, and testimonials
+        document.querySelectorAll('.service-card, .pricing-card, .testimonial-card, .quality-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
 </body>
 </html>

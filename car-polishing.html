@@ -10,10 +10,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="car-polishing.css">
 </head>
 <body>
     <header class="navbar" id="navbar">
@@ -44,7 +43,7 @@
         </div>
     </header>
 
-     <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu" id="mobile-menu">
         <a href="home-cleaning.html" class="mobile-link">Home Cleaning</a>
         <a href="car-polishing.html" class="mobile-link">Car Polishing</a>
         <a href="#auto-about" class="mobile-link">About</a>
@@ -55,34 +54,43 @@
     </div>
 
     <main>
-         <section id="auto-hero" class="hero hero-auto">
+        <section id="auto-hero" class="hero hero-auto">
+            <div class="hero-overlay"></div>
             <div class="container hero-content">
-                <div class="hero-badge" style="background-color: #374151; color: #f3f4f6;">
+                <div class="hero-badge">
                     <i class="fa-solid fa-car"></i>
                     <span>Professional Car Detailing</span>
                 </div>
                 <h1 class="hero-title">
-                    Auto Polishing Services
+                    Premium Auto Detailing
                     <br>
-                    <span class="hero-highlight" style="background: linear-gradient(to right, #ef4444, #374151);">
-                        Goa
-                    </span>
+                    <span class="hero-highlight">Services in Goa</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Expert car polishing, ceramic coating, and interior detailing. Restore your car's showroom shine.
+                    Expert car polishing, ceramic coating, and interior detailing. Restore your car's showroom shine with professional care.
                 </p>
+                <div class="hero-cta">
+                    <a href="#auto-contact" class="btn btn-primary btn-lg">
+                        Get a Quote
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="tel:+917387257618" class="btn btn-secondary btn-lg">
+                        <i class="fa-solid fa-phone"></i>
+                        Call Now
+                    </a>
+                </div>
                 <div class="hero-stats">
                     <div class="stat-item">
-                        <span class="stat-number" style="color: #ef4444;">800+</span>
+                        <span class="stat-number">800+</span>
                         <span class="stat-label">Cars Detailed</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" style="color: #ef4444;">5★</span>
-                        <span class="stat-label">Rating</span>
+                        <span class="stat-number">5.0★</span>
+                        <span class="stat-label">Average Rating</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" style="color: #ef4444;">7+</span>
-                        <span class="stat-label">Years</span>
+                        <span class="stat-number">7+</span>
+                        <span class="stat-label">Years Experience</span>
                     </div>
                 </div>
             </div>
@@ -91,59 +99,194 @@
         <section id="auto-services" class="services-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Our Car Detailing Services</h2>
-                    <p class="section-subtitle">Premium services to protect and restore your vehicle.</p>
+                    <span class="section-tag">Our Services</span>
+                    <h2 class="section-title">Premium Car Detailing Services</h2>
+                    <p class="section-subtitle">Comprehensive solutions to protect, restore, and maintain your vehicle's pristine condition.</p>
                 </div>
 
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="service-icon" style="--icon-color: #ef4444;"><i class="fa-solid fa-car-burst"></i></div>
+                        <div class="service-icon red">
+                            <i class="fa-solid fa-car-burst"></i>
+                        </div>
                         <h3 class="service-title">Ceramic Coating</h3>
-                        <p class="service-description">Long-lasting 9H ceramic coating for ultimate paint protection and gloss.</p>
+                        <p class="service-description">Long-lasting 9H ceramic coating for ultimate paint protection and exceptional gloss finish.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> 9H Hardness Protection</li>
+                            <li><i class="fa-solid fa-check"></i> UV & Weather Resistant</li>
+                            <li><i class="fa-solid fa-check"></i> Hydrophobic Effect</li>
+                        </ul>
                     </div>
+
                     <div class="service-card">
-                        <div class="service-icon" style="--icon-color: #f97316;"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <div class="service-icon orange">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
                         <h3 class="service-title">Paint Polishing</h3>
-                        <p class="service-description">Multi-stage paint correction to remove swirls, scratches, and oxidation.</p>
+                        <p class="service-description">Multi-stage paint correction to remove swirls, scratches, and oxidation for a mirror finish.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Scratch Removal</li>
+                            <li><i class="fa-solid fa-check"></i> Swirl Mark Elimination</li>
+                            <li><i class="fa-solid fa-check"></i> Mirror-Like Finish</li>
+                        </ul>
                     </div>
+
                     <div class="service-card">
-                        <div class="service-icon" style="--icon-color: #10b981;"><i class="fa-solid fa-car-on"></i></div>
+                        <div class="service-icon green">
+                            <i class="fa-solid fa-car-on"></i>
+                        </div>
                         <h3 class="service-title">Interior Detailing</h3>
-                        <p class="service-description">Deep cleaning of carpets, upholstery, leather, and all interior surfaces.</p>
+                        <p class="service-description">Deep cleaning of carpets, upholstery, leather, and all interior surfaces for a fresh cabin.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Steam Cleaning</li>
+                            <li><i class="fa-solid fa-check"></i> Leather Conditioning</li>
+                            <li><i class="fa-solid fa-check"></i> Odor Elimination</li>
+                        </ul>
                     </div>
+
                     <div class="service-card">
-                        <div class="service-icon" style="--icon-color: #3b82f6;"><i class="fa-solid fa-soap"></i></div>
+                        <div class="service-icon blue">
+                            <i class="fa-solid fa-soap"></i>
+                        </div>
                         <h3 class="service-title">Premium Wash</h3>
-                        <p class="service-description">Professional foam wash, clay bar treatment, and spray wax.</p>
+                        <p class="service-description">Professional foam wash, clay bar treatment, and spray wax for a spotless exterior.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> pH Balanced Products</li>
+                            <li><i class="fa-solid fa-check"></i> Clay Bar Treatment</li>
+                            <li><i class="fa-solid fa-check"></i> Tire & Wheel Care</li>
+                        </ul>
                     </div>
+
                     <div class="service-card">
-                        <div class="service-icon" style="--icon-color: #6366f1;"><i class="fa-solid fa-shield-halved"></i></div>
-                        <h3 class="service-title">Paint Protection Film (PPF)</h3>
-                        <p class="service-description">Install clear self-healing film to protect from stone chips and scratches.</p>
+                        <div class="service-icon purple">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="service-title">Paint Protection Film</h3>
+                        <p class="service-description">Install clear self-healing film to protect from stone chips, scratches, and environmental damage.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Self-Healing Technology</li>
+                            <li><i class="fa-solid fa-check"></i> Invisible Protection</li>
+                            <li><i class="fa-solid fa-check"></i> 10-Year Warranty</li>
+                        </ul>
                     </div>
+
                     <div class="service-card">
-                        <div class="service-icon" style="--icon-color: #6b7280;"><i class="fa-solid fa-gear"></i></div>
+                        <div class="service-icon gray">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
                         <h3 class="service-title">Engine Bay Detailing</h3>
-                        <p class="service-description">Safe cleaning and dressing of the engine bay for a like-new look.</p>
+                        <p class="service-description">Safe cleaning and dressing of the engine bay for a like-new appearance and easy maintenance.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Safe Degreasing</li>
+                            <li><i class="fa-solid fa-check"></i> Component Protection</li>
+                            <li><i class="fa-solid fa-check"></i> Professional Dressing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Why Choose Us</span>
+                    <h2 class="section-title">The AKEnterprises Difference</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <h3>Certified Professionals</h3>
+                        <p>Trained and certified detailing experts with years of experience.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-flask"></i>
+                        </div>
+                        <h3>Premium Products</h3>
+                        <p>We use only the finest detailing products and materials.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <h3>Quick Turnaround</h3>
+                        <p>Efficient service without compromising on quality or attention to detail.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-shield-heart"></i>
+                        </div>
+                        <h3>Satisfaction Guaranteed</h3>
+                        <p>We stand behind our work with a complete satisfaction guarantee.</p>
                     </div>
                 </div>
             </div>
         </section>
         
-        <section id="auto-about" class="about-section">
+        <section id="auto-about" class="testimonials-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">What Our Car Clients Say</h2>
-                    <p class="section-subtitle">The trusted choice for car enthusiasts and owners in Goa.</p>
+                    <span class="section-tag">Testimonials</span>
+                    <h2 class="section-title">What Our Clients Say</h2>
+                    <p class="section-subtitle">Trusted by car enthusiasts and owners across Goa.</p>
                 </div>
 
-                <div class="swiper testimonial-slider-auto">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><div class="testimonial-card"><div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p class="testimonial-quote">"My 5-year-old car looks better than it did from the showroom. The ceramic coating is incredible. Amazing work by the AKEnterprises team!"</p><div class="testimonial-author"><span class="author-name">- V. Patel</span><span class="author-location">Goa</span></div></div></div>
-                        <div class="swiper-slide"><div class="testimonial-card"><div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p class="testimonial-quote">"I was hesitant about polishing my new bike, but they did a flawless job. The gloss is insane. True professionals."</p><div class="testimonial-author"><span class="author-name">- J. Almeda</span><span class="author-location">Margao</span></div></div></div>
-                        <div class="swiper-slide"><div class="testimonial-card"><div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p class="testimonial-quote">"Booked an interior detailing. They removed a 2-year-old stain from my seat. The car feels so fresh and new inside. 10/10 service."</p><div class="testimonial-author"><span class="author-name">- S. Keni</span><span class="author-location">Ponda</span></div></div></div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"My 5-year-old car looks better than it did from the showroom. The ceramic coating is incredible. Amazing work by the AKEnterprises team!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">V</div>
+                            <div class="author-info">
+                                <span class="author-name">V. Patel</span>
+                                <span class="author-location">Goa</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="swiper-pagination pagination-auto"></div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"I was hesitant about polishing my new bike, but they did a flawless job. The gloss is insane. True professionals."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">J</div>
+                            <div class="author-info">
+                                <span class="author-name">J. Almeda</span>
+                                <span class="author-location">Margao</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Booked an interior detailing. They removed a 2-year-old stain from my seat. The car feels so fresh and new inside. 10/10 service."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">S</div>
+                            <div class="author-info">
+                                <span class="author-name">S. Keni</span>
+                                <span class="author-location">Ponda</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -151,14 +294,39 @@
         <section id="auto-contact" class="contact-section">
             <div class="container">
                 <div class="section-header">
+                    <span class="section-tag">Get In Touch</span>
                     <h2 class="section-title">Contact Us for Car Detailing</h2>
                     <p class="section-subtitle">Get a quote or schedule your car polishing service today.</p>
                 </div>
                 <div class="contact-grid">
-                    <a href="tel:+917387257618" class="contact-card"><i class="fa-solid fa-phone contact-icon"></i><span class="contact-label">Phone</span><span class="contact-value">+91 73872 57618</span></a>
-                    <a href="mailto:auto@akenterprises.com" class="contact-card"><i class="fa-solid fa-envelope contact-icon"></i><span class="contact-label">Email</span><span class="contact-value">auto@akenterprises.com</span></a>
-                    <div class="contact-card"><i class="fa-solid fa-map-marker-alt contact-icon"></i><span class="contact-label">Workshop Location</span><span class="contact-value">Goa</span></div>
-                    <div class="contact-card"><i class="fa-solid fa-clock contact-icon"></i><span class="contact-label">Hours</span><span class="contact-value">8 AM - 7 PM</span></div>
+                    <a href="tel:+917387257618" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <span class="contact-label">Phone</span>
+                        <span class="contact-value">+91 73872 57618</span>
+                    </a>
+                    <a href="mailto:auto@akenterprises.com" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">auto@akenterprises.com</span>
+                    </a>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-map-marker-alt"></i>
+                        </div>
+                        <span class="contact-label">Location</span>
+                        <span class="contact-value">Goa</span>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <span class="contact-label">Working Hours</span>
+                        <span class="contact-value">8 AM - 7 PM</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -172,7 +340,7 @@
                         <i class="fa-solid fa-wand-magic-sparkles"></i>
                     </div>
                     <div class="logo-text">
-                    <span class="logo-title">AKEnterprises</span>
+                        <span class="logo-title">AKEnterprises</span>
                         <span class="logo-subtitle">Goa</span>
                     </div>
                 </div>
@@ -222,7 +390,7 @@
             class="float-btn whatsapp-btn" 
             aria-label="Message on WhatsApp">
             <i class="fa-brands fa-whatsapp"></i>
-            <span class="float-tooltip">Message on WhatsApp</span>
+            <span class="float-tooltip">WhatsApp</span>
         </a>
         <a href="tel:+917387257618" 
             class="float-btn call-btn" 
@@ -232,7 +400,55 @@
         </a>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./index.js"></script>
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbar = document.getElementById('navbar');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            menuToggle.querySelector('i').classList.toggle('fa-bars');
+            menuToggle.querySelector('i').classList.toggle('fa-times');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                menuToggle.querySelector('i').classList.add('fa-bars');
+                menuToggle.querySelector('i').classList.remove('fa-times');
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
