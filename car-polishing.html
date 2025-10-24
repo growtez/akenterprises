@@ -28,12 +28,12 @@
             </a>
             
             <nav class="nav-links">
-                <a href="home-cleaning.html" class="nav-link">Home Cleaning</a>
-                <a href="car-polishing.html" class="nav-link active">Car Polishing</a>
-                <a href="#auto-about" class="nav-link">About</a>
+                <a href="#auto-hero" class="nav-link ">Home</a>
+                <a href="#auto-services" class="nav-link ">Services</a>
+                <a href="#auto-gallery" class="nav-link">Gallery</a>
                 <a href="#auto-contact" class="nav-link">Contact</a>
-                <a href="tel:+917387257618" class="btn btn-primary nav-btn-desktop">
-                    <i class="fa-solid fa-phone"></i> Call Now
+                <a href="home-cleaning.html" class="btn btn-primary nav-btn-desktop">
+                     Home Services
                 </a>
             </nav>
 
@@ -44,18 +44,19 @@
     </header>
 
     <div class="mobile-menu" id="mobile-menu">
-        <a href="home-cleaning.html" class="mobile-link">Home Cleaning</a>
-        <a href="car-polishing.html" class="mobile-link">Car Polishing</a>
-        <a href="#auto-about" class="mobile-link">About</a>
-        <a href="#auto-contact" class="mobile-link">Contact</a>
-        <a href="tel:+917387257618" class="btn btn-primary mobile-btn">
-            <i class="fa-solid fa-phone"></i> Call Now
-        </a>
+                <a href="#auto-hero" class="nav-link ">Home</a>
+                <a href="#auto-services" class="nav-link ">Services</a>
+                <a href="#auto-gallery" class="nav-link">Gallery</a>
+                <a href="#auto-contact" class="nav-link">Contact</a>
+                <a href="home-cleaning.html" class="btn btn-primary nav-btn-desktop">
+                     Home Services
+                </a>
     </div>
 
     <main>
         <section id="auto-hero" class="hero hero-auto">
             <div class="hero-overlay"></div>
+            <div class="hero-background"></div>
             <div class="container hero-content">
                 <div class="hero-badge">
                     <i class="fa-solid fa-car"></i>
@@ -94,6 +95,32 @@
                     </div>
                 </div>
             </div>
+            <div class="hero-scroll-indicator">
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section class="trust-bar">
+            <div class="container">
+                <div class="trust-items">
+                    <div class="trust-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>100% Satisfaction Guarantee</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Certified Professionals</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Same Day Service Available</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fa-solid fa-star"></i>
+                        <span>Premium Products Only</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="auto-services" class="services-section">
@@ -106,8 +133,10 @@
 
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="service-icon red">
-                            <i class="fa-solid fa-car-burst"></i>
+                        <div class="service-icon-wrapper red">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-car-burst"></i>
+                            </div>
                         </div>
                         <h3 class="service-title">Ceramic Coating</h3>
                         <p class="service-description">Long-lasting 9H ceramic coating for ultimate paint protection and exceptional gloss finish.</p>
@@ -115,12 +144,18 @@
                             <li><i class="fa-solid fa-check"></i> 9H Hardness Protection</li>
                             <li><i class="fa-solid fa-check"></i> UV & Weather Resistant</li>
                             <li><i class="fa-solid fa-check"></i> Hydrophobic Effect</li>
+                            <li><i class="fa-solid fa-check"></i> 2-5 Year Durability</li>
                         </ul>
+                        <div class="service-price">Starting from ₹8,999</div>
+                        <a href="tel:+917387257618" class="service-btn">Book Now</a>
                     </div>
 
-                    <div class="service-card">
-                        <div class="service-icon orange">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <div class="service-card featured">
+                        <div class="featured-badge">Most Popular</div>
+                        <div class="service-icon-wrapper orange">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
                         </div>
                         <h3 class="service-title">Paint Polishing</h3>
                         <p class="service-description">Multi-stage paint correction to remove swirls, scratches, and oxidation for a mirror finish.</p>
@@ -128,12 +163,17 @@
                             <li><i class="fa-solid fa-check"></i> Scratch Removal</li>
                             <li><i class="fa-solid fa-check"></i> Swirl Mark Elimination</li>
                             <li><i class="fa-solid fa-check"></i> Mirror-Like Finish</li>
+                            <li><i class="fa-solid fa-check"></i> Paint Depth Enhancement</li>
                         </ul>
+                        <div class="service-price">Starting from ₹4,999</div>
+                        <a href="tel:+917387257618" class="service-btn">Book Now</a>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon green">
-                            <i class="fa-solid fa-car-on"></i>
+                        <div class="service-icon-wrapper green">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-car-on"></i>
+                            </div>
                         </div>
                         <h3 class="service-title">Interior Detailing</h3>
                         <p class="service-description">Deep cleaning of carpets, upholstery, leather, and all interior surfaces for a fresh cabin.</p>
@@ -141,12 +181,17 @@
                             <li><i class="fa-solid fa-check"></i> Steam Cleaning</li>
                             <li><i class="fa-solid fa-check"></i> Leather Conditioning</li>
                             <li><i class="fa-solid fa-check"></i> Odor Elimination</li>
+                            <li><i class="fa-solid fa-check"></i> Stain Removal</li>
                         </ul>
+                        <div class="service-price">Starting from ₹2,999</div>
+                        <a href="tel:+917387257618" class="service-btn">Book Now</a>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon blue">
-                            <i class="fa-solid fa-soap"></i>
+                        <div class="service-icon-wrapper blue">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-soap"></i>
+                            </div>
                         </div>
                         <h3 class="service-title">Premium Wash</h3>
                         <p class="service-description">Professional foam wash, clay bar treatment, and spray wax for a spotless exterior.</p>
@@ -154,12 +199,17 @@
                             <li><i class="fa-solid fa-check"></i> pH Balanced Products</li>
                             <li><i class="fa-solid fa-check"></i> Clay Bar Treatment</li>
                             <li><i class="fa-solid fa-check"></i> Tire & Wheel Care</li>
+                            <li><i class="fa-solid fa-check"></i> Quick Wax Protection</li>
                         </ul>
+                        <div class="service-price">Starting from ₹999</div>
+                        <a href="tel:+917387257618" class="service-btn">Book Now</a>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon purple">
-                            <i class="fa-solid fa-shield-halved"></i>
+                        <div class="service-icon-wrapper purple">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
                         </div>
                         <h3 class="service-title">Paint Protection Film</h3>
                         <p class="service-description">Install clear self-healing film to protect from stone chips, scratches, and environmental damage.</p>
@@ -167,12 +217,17 @@
                             <li><i class="fa-solid fa-check"></i> Self-Healing Technology</li>
                             <li><i class="fa-solid fa-check"></i> Invisible Protection</li>
                             <li><i class="fa-solid fa-check"></i> 10-Year Warranty</li>
+                            <li><i class="fa-solid fa-check"></i> UV Protection</li>
                         </ul>
+                        <div class="service-price">Starting from ₹15,999</div>
+                        <a href="tel:+917387257618" class="service-btn">Book Now</a>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon gray">
-                            <i class="fa-solid fa-gear"></i>
+                        <div class="service-icon-wrapper gray">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-gear"></i>
+                            </div>
                         </div>
                         <h3 class="service-title">Engine Bay Detailing</h3>
                         <p class="service-description">Safe cleaning and dressing of the engine bay for a like-new appearance and easy maintenance.</p>
@@ -180,7 +235,54 @@
                             <li><i class="fa-solid fa-check"></i> Safe Degreasing</li>
                             <li><i class="fa-solid fa-check"></i> Component Protection</li>
                             <li><i class="fa-solid fa-check"></i> Professional Dressing</li>
+                            <li><i class="fa-solid fa-check"></i> Corrosion Prevention</li>
                         </ul>
+                        <div class="service-price">Starting from ₹1,999</div>
+                        <a href="tel:+917387257618" class="service-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our Process</span>
+                    <h2 class="section-title">How We Work</h2>
+                    <p class="section-subtitle">Professional detailing in 4 simple steps</p>
+                </div>
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="process-number">01</div>
+                        <div class="process-icon">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+                        <h3>Inspection & Assessment</h3>
+                        <p>Thorough evaluation of your vehicle's condition to determine the best treatment plan.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">02</div>
+                        <div class="process-icon">
+                            <i class="fa-solid fa-spray-can"></i>
+                        </div>
+                        <h3>Deep Cleaning</h3>
+                        <p>Professional washing, decontamination, and preparation of all surfaces.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">03</div>
+                        <div class="process-icon">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3>Correction & Protection</h3>
+                        <p>Paint correction, polishing, and application of protective coatings.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">04</div>
+                        <div class="process-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <h3>Final Inspection</h3>
+                        <p>Quality check and final touches to ensure perfection before delivery.</p>
                     </div>
                 </div>
             </div>
@@ -198,14 +300,14 @@
                             <i class="fa-solid fa-certificate"></i>
                         </div>
                         <h3>Certified Professionals</h3>
-                        <p>Trained and certified detailing experts with years of experience.</p>
+                        <p>Trained and certified detailing experts with years of experience in automotive care.</p>
                     </div>
                     <div class="feature-item">
                         <div class="feature-icon">
                             <i class="fa-solid fa-flask"></i>
                         </div>
                         <h3>Premium Products</h3>
-                        <p>We use only the finest detailing products and materials.</p>
+                        <p>We use only the finest detailing products and materials from trusted brands.</p>
                     </div>
                     <div class="feature-item">
                         <div class="feature-icon">
@@ -219,7 +321,47 @@
                             <i class="fa-solid fa-shield-heart"></i>
                         </div>
                         <h3>Satisfaction Guaranteed</h3>
-                        <p>We stand behind our work with a complete satisfaction guarantee.</p>
+                        <p>We stand behind our work with a complete satisfaction guarantee on all services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="auto-gallery" class="gallery-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Gallery</span>
+                    <h2 class="section-title">Before & After Transformations</h2>
+                    <p class="section-subtitle">See the difference professional detailing makes</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-badge">Ceramic Coating</div>
+                        <div class="gallery-placeholder">
+                            <i class="fa-solid fa-car"></i>
+                            <span>Before/After</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-badge">Paint Correction</div>
+                        <div class="gallery-placeholder">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <span>Before/After</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-badge">Interior Detail</div>
+                        <div class="gallery-placeholder">
+                            <i class="fa-solid fa-car-on"></i>
+                            <span>Before/After</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-badge">Full Detail</div>
+                        <div class="gallery-placeholder">
+                            <i class="fa-solid fa-star"></i>
+                            <span>Before/After</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -286,6 +428,26 @@
                                 <span class="author-location">Ponda</span>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <div class="cta-text">
+                        <h2>Ready to Transform Your Vehicle?</h2>
+                        <p>Get professional car detailing services that bring back the showroom shine. Contact us today for a free quote!</p>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="tel:+917387257618" class="btn btn-light btn-lg">
+                            <i class="fa-solid fa-phone"></i>
+                            Call Now
+                        </a>
+                        <a href="#auto-contact" class="btn btn-outline btn-lg">
+                            Get Quote
+                        </a>
                     </div>
                 </div>
             </div>
@@ -401,7 +563,6 @@
     </div>
 
     <script>
-        // Mobile menu toggle
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
         const navbar = document.getElementById('navbar');
@@ -412,7 +573,6 @@
             menuToggle.querySelector('i').classList.toggle('fa-times');
         });
 
-        // Close mobile menu when clicking a link
         document.querySelectorAll('.mobile-link').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.remove('active');
@@ -421,7 +581,6 @@
             });
         });
 
-        // Navbar scroll effect
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
@@ -430,10 +589,8 @@
             }
         });
 
-        // Set current year
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
-        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
@@ -448,6 +605,32 @@
                     }
                 }
             });
+        });
+
+        const scrollIndicator = document.querySelector('.hero-scroll-indicator');
+        if (scrollIndicator) {
+            scrollIndicator.addEventListener('click', () => {
+                document.querySelector('#auto-services').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .feature-item, .process-step, .testimonial-card').forEach(el => {
+            observer.observe(el);
         });
     </script>
 </body>
