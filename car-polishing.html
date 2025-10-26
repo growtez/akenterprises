@@ -22,7 +22,7 @@
                     <i class="fa-solid fa-wand-magic-sparkles"></i>
                 </div>
                 <div class="logo-text">
-                    <span class="logo-title">A.K Enterprises</span>
+                    <span class="logo-title">A.K. Enterprises</span>
                     <span class="logo-subtitle">Goa</span>
                 </div>
             </a>
@@ -43,16 +43,6 @@
         </div>
     </header>
 
-    <div class="mobile-menu" id="mobile-menu">
-                <a href="#auto-hero" class="nav-link ">Home</a>
-                <a href="#auto-services" class="nav-link ">Services</a>
-                <a href="#auto-gallery" class="nav-link">Gallery</a>
-                <a href="#auto-contact" class="nav-link">Contact</a>
-                <a href="home-cleaning.html" class="btn btn-primary nav-btn-desktop">
-                     Home Services
-                </a>
-    </div>
-
     <main>
         <section id="auto-hero" class="hero hero-auto">
             <div class="hero-overlay"></div>
@@ -60,10 +50,10 @@
             <div class="container hero-content">
                 <div class="hero-badge">
                     <i class="fa-solid fa-car"></i>
-                    <span>Professional Car Detailing</span>
+                    <span>Professional Car Polishing & Detailing</span>
                 </div>
                 <h1 class="hero-title">
-                    Premium Auto Detailing
+                    Premium Car Polishing
                     <br>
                     <span class="hero-highlight">Services in Goa</span>
                 </h1>
@@ -71,26 +61,26 @@
                     Expert car polishing, ceramic coating, and interior detailing. Restore your car's showroom shine with professional care.
                 </p>
                 <div class="hero-cta">
-                    <a href="#auto-contact" class="btn btn-primary btn-lg">
+                    <!-- <a href="#auto-contact" class="btn btn-primary btn-lg">
                         Get a Quote
                         <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                    <a href="tel:+919860326361" class="btn btn-secondary btn-lg">
+                    </a> -->
+                    <a href="tel:+919860326361" class="btn btn-primary btn-lg">
                         <i class="fa-solid fa-phone"></i>
-                        Call Now
+                        Call Us Now
                     </a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat-item">
-                        <span class="stat-number">800+</span>
+                        <span class="stat-number">580+</span>
                         <span class="stat-label">Cars Detailed</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">5.0★</span>
+                        <span class="stat-number">4.8★</span>
                         <span class="stat-label">Average Rating</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">7+</span>
+                        <span class="stat-number">1+</span>
                         <span class="stat-label">Years Experience</span>
                     </div>
                 </div>
@@ -367,7 +357,7 @@
             </div>
         </section>
         
-        <section id="auto-about" class="testimonials-section">
+        <!-- <section id="auto-about" class="testimonials-section">
             <div class="container">
                 <div class="section-header">
                     <span class="section-tag">Testimonials</span>
@@ -431,7 +421,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="cta-section">
             <div class="container">
@@ -563,34 +553,26 @@
     </div>
 
     <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
         const navbar = document.getElementById('navbar');
 
         menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-            menuToggle.querySelector('i').classList.toggle('fa-bars');
-            menuToggle.querySelector('i').classList.toggle('fa-times');
-        });
-
-        document.querySelectorAll('.mobile-link').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-                menuToggle.querySelector('i').classList.add('fa-bars');
-                menuToggle.querySelector('i').classList.remove('fa-times');
-            });
-        });
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.right = '0';
+                navLinks.style.background = 'var(--secondary-color)';
+                navLinks.style.padding = '1rem';
+                navLinks.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
             }
         });
 
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
+        // Smooth Scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
@@ -602,11 +584,25 @@
                             behavior: 'smooth',
                             block: 'start'
                         });
+                        // Close mobile menu if open
+                        if (window.innerWidth <= 968) {
+                            navLinks.style.display = 'none';
+                        }
                     }
                 }
             });
         });
 
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll indicator
         const scrollIndicator = document.querySelector('.hero-scroll-indicator');
         if (scrollIndicator) {
             scrollIndicator.addEventListener('click', () => {
@@ -616,22 +612,34 @@
             });
         }
 
+        // Scroll Animation
         const observerOptions = {
             threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
+            rootMargin: '0px 0px -50px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-in');
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
                 }
             });
         }, observerOptions);
 
-        document.querySelectorAll('.service-card, .feature-item, .process-step, .testimonial-card').forEach(el => {
-            observer.observe(el);
+        // Animate service cards and other elements
+        document.querySelectorAll('.service-card, .feature-item, .process-step, .testimonial-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
         });
+
+        // Update copyright year
+        const yearSpan = document.getElementById('current-year');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
     </script>
 </body>
 </html>
