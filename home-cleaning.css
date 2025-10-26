@@ -272,7 +272,7 @@ body {
 
 /* About Section */
 .about-section {
-    padding: 5rem 0;
+    margin-bottom: 5rem;
     background: var(--white);
 }
 
@@ -322,6 +322,7 @@ body {
     color: var(--text-light);
     letter-spacing: 1px;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .about-content h2 {
@@ -329,6 +330,7 @@ body {
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: var(--primary-green);
+    text-align: center;
 }
 
 .about-content h2 .italic {
@@ -340,6 +342,7 @@ body {
     color: var(--text-light);
     margin-bottom: 2rem;
     line-height: 1.8;
+    text-align: center;
 }
 
 /* Services Section */

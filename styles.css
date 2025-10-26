@@ -119,6 +119,17 @@ body {
     align-items: center;
 }
 
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--accent-yellow);
+}
+
 .btn {
     padding: 0.75rem 1.5rem;
     border-radius: 50px;
@@ -146,17 +157,11 @@ body {
 
 .menu-toggle {
     display: none;
-    background: var(--accent-yellow);
+    background: none;
     border: none;
-    color: var(--primary-green);
-    font-size: 1.2rem;
+    color: var(--white);
+    font-size: 1.5rem;
     cursor: pointer;
-    width: 45px;
-    height: 45px;
-    border-radius: 12px;
-    align-items: center;
-    justify-content: center;
-    transition: var(--transition);
 }
 
 .menu-toggle:hover {
@@ -478,6 +483,16 @@ body {
     text-align: center;
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.9rem;
+}
+
+.footer-copyright a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-copyright a:hover {
+    color: var(--accent-yellow);
 }
 
 /* ==================== FLOATING BUTTONS ==================== */
