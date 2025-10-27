@@ -360,7 +360,7 @@ body {
     margin-bottom: 3rem;
 }
 
-.quality-card { background: var(--light-cream); padding: 2rem; border-radius: 20px; }
+.quality-card { background: var(--light-cream); padding: 2rem; border-radius: 20px; justify-items: center; }
 
 .quality-icon {
     width: 60px;
@@ -623,6 +623,8 @@ body {
     text-align: center;
     color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-bottom a { color: rgba(255, 255, 255, 0.6); text-decoration: none; transition: color 0.3s ease; }
 
 /* Floating Buttons */
 .floating-btns {
